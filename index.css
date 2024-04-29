@@ -1,0 +1,518 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    overflow-x: hidden;
+    background-color: whitesmoke;
+}
+
+/* Section--1 */
+
+.mainContainer {
+    position: relative;
+    background-image: url(./IMAGES/image1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.mainContainer::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Change the alpha value to adjust the darkness */
+}
+/* .mainContainerr{
+    background-image: url(./IMAGES/image2.jpg);
+    width: 100vw;
+
+} */
+
+element.style{
+    width: 100%;
+}
+
+.navbar{  
+    background-color: rgba(0, 0, 0, 0.529);
+    position: fixed !important;
+    z-index: 1;
+    width: 100vw;
+    
+}
+.navbar-1{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  padding: 0px 50px;
+  
+ 
+   
+}
+.portfolioSubNav{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: absolute;
+    right: 15%;
+    top: 41px;
+    z-index: 10;
+    background-color: white;
+    padding: 8px 10px;
+   visibility:hidden;
+}
+
+#text{
+
+     color: white;
+     font-weight: bold;
+     padding: 22px;
+}
+.home-buttons{
+    
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 20px;
+}
+.home-buttons a{
+    color: white;
+    text-decoration: none;
+
+    &:hover {
+        color: black;
+    }
+}
+.textArea {
+    position: absolute; 
+    z-index: 1;
+    width: 400px;
+    font-size: 30px;
+    color: white;
+    margin: 250px 190px 140px 100px;
+    overflow: hidden; /* or overflow: auto; or overflow: scroll; */
+}
+ .subContainer1{
+    position: absolute; 
+    z-index: 1;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+    padding: 10px 100px;
+    font-size: 20px;
+    margin: 450px 0px;
+}
+.view-button{
+    background-color: #7d8f91;
+   border-radius: 5px;
+  padding: 12px 30px;
+  color: white;
+  font-size: 20px;
+  border: none;
+  &:hover{
+    background-color: #7d8f91a0;
+  }
+   
+}
+.wedding-Text{
+    width: 320px;
+    text-align: right;
+    color: white;
+}
+
+#hr{
+    color: white;
+    margin-top: 650px;
+}
+
+
+
+
+
+/* AlbumSection */
+.album-sec1{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 30px;
+   width: 100vw;
+   margin: 30px 0px;
+    
+}
+.imgContainer1{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.img1{
+    width: 300px;
+    height: 400px;
+}
+.img2{
+width: 300px;
+height: 200px;
+}
+.imgContainer2{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+/* Section--2 */
+
+.maincontainer2{
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 140px;
+}
+.textarea1{
+    background-color: ;
+    /* height: 500px; */
+    display: flex;
+    align-items: end;
+    /* padding-bottom: 50px; */
+    width: 400px;
+    /* margin-top: 100px; */
+    font-size: 20px;
+}
+.textarea1 span{
+    /* background-color: red; */
+    padding-bottom: 80px;
+}
+.textarea2{
+    /* height: 500px; */
+    width: 400px;
+    font-size: 80px;
+    text-align: right;
+}
+
+/* Sectiom--3 */
+ .maincontainer3{
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 140px;
+}
+#image3 img{
+    height: 360px;
+    width: 550px;
+}
+.textarea3{
+    width: 420px;
+    height: 500px;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    justify-content: center;
+    
+}
+#para1{
+    padding-top: 40px;
+    line-height: 28px;
+}
+#para2{
+    padding-top: 40px;
+    line-height: 28px;
+}
+.learn-class{
+    display: flex;
+    align-items: end;
+}
+.maincontainer3 .learn-button{
+    height: 50px;
+    background-color: #7d8f91;
+    width: 200px;
+    text-align: center;
+    border: none;
+
+}
+
+.testimonials{
+    height: 100%;
+    
+}
+
+.testimonials img{
+    width: 600px;
+}
+.item p{
+    width: 300px;
+    font-size: 25px;
+}
+
+
+
+.itemi{
+    display: flex !important;
+    align-items: center !important;
+    height: 300px !important;
+    justify-content: space-around;
+
+}
+
+
+/* Section--4 */
+
+.section4{
+    border: 20px solid burlywood;
+    background-image: url(./IMAGES/image4.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    font-size: 60px;
+    color: whitesmoke;
+    align-items: center;
+    height: 70vh;
+    width: 100vw;
+    margin: 150px 0px;
+}
+.para3{
+    width: 400px;
+}
+
+/* Section--5 */
+.section5{
+    height: 300px;
+    display: flex;
+    gap: 40px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 100px 0px;
+}
+.section5 h2,.section5 p{
+    width:600px;
+    text-align: center;
+}
+.section5 h2{
+    font-size: 30px;
+}
+.section5 p{
+    font-size: 18px;
+    line-height: 25px;
+}
+.section5 button{
+    background-color: rgba(0, 0, 0, 0.867);
+    padding: 10px 30px;
+    border: none;
+    color: white;
+}
+
+/* Section--6 */
+#carouselExampleIndicators{
+  
+    display: flex;
+    justify-content: center;
+}
+
+.carousel-item img{
+    width: 50vw;
+    height: 600px;
+} 
+
+/* section--7 */
+.section7{
+    height: 40vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+} 
+.section7 p{
+    height: 15vh;
+    width: 20vw;
+    font-size: 18px;
+}
+
+/* Section--8 */
+.section8{
+    height: 80vh;
+    width: 100vw;
+    /* background-color: red; */
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-around;
+    align-items: center; 
+}
+.section8 img{
+    /* padding: 60px; */
+    height: 45vh;
+    width: 40vw;
+    border: none;
+    box-shadow: -50px -50px 10px 8px rgba(84, 84, 84, 0.6);
+}
+.section8 h3{
+    height: 20vh;
+    width: 20vw;
+    font-size: 40px;
+    margin: 50px 50px 0px 50px;
+}
+
+.section8 p{
+    height: 10vh;
+    width: 25vw;
+    font-size: 18px;
+    margin-left: 150px;  
+    margin-top: 20px; 
+}
+
+
+
+/* slick Slider */
+
+
+/* Customize slider styles here */
+.slider{
+    
+    height: 100vh;
+}
+.slick-slide {
+  height: 90VH !important;
+}
+.slick-prev,
+.slick-next {
+  font-size: 24px;
+  line-height: 1;
+  color: black;
+}
+.slick-slide-number {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 14px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+.slick-current-slide {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 14px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    height: 120px;
+    background-color: black;
+}
+
+
+/* Mobile Responce */
+
+@media only screen and (max-width: 400px) {
+    /* Adjust the styles for smaller screens here */
+
+    /* Example: Hide the navbar sub-menu on smaller screens */
+    .portfolioSubNav {
+        display: none;
+    }
+
+    /* Example: Adjust the margin for the text area in Section--1 */
+    .textArea {
+        margin: 120px 10px 20px 10px;
+        font-size: 20px;
+    }
+
+    /* Example: Adjust the margin for the subContainer1 in Section--1 */
+    .subContainer1 {
+        margin: 150px 0px;
+    }
+
+    /* Add more styles as needed */
+
+    .album-sec1{
+        display: none;
+        padding: 80px;
+    }
+}
+
+@media screen and (max-width:1024px){
+    .slick-slide {
+        height: 43VH !important;
+    }
+    .slider {
+        height: 44vh;
+    }
+    .itemi{
+        display: flex !important;
+       
+        height: 300px !important;
+       
+    
+    }
+    .testimonials img {
+        width: 365px;
+        padding-right: 130px;
+    }
+    .item p {
+        width: 300px;
+        font-size: 17px;
+    }
+    .section4 {  
+        width: 80vw;
+    }
+    .section5 {
+       
+        display: block;
+       
+    }
+    .buttonDiv{
+        width: 85%;
+        display: flex;
+        justify-content: center;
+    }
+    .carousel-item img {
+       
+        height: 500px;
+        width: 80% !important
+    }
+    
+    .section7 p {
+        height: 8vh;
+        width: 40vw;
+        font-size: 18px;
+    }
+    .section7 {
+        height: 40vh;
+        width: 80vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .section8 img {
+        height: 45vh;
+        width: 80vw;
+        border: none;
+        box-shadow: rgba(84, 84, 84, 0.6) -50px -50px 10px 8px;
+    }
+   
+}
+
+
+
+
+

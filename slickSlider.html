@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Slick Slider Example</title>
+  <!-- Add jQuery CDN -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- Add Slick CSS file -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <!-- Add Slick theme CSS file (optional) -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+  <style>
+    /* Customize slider styles here */
+    .slick-slide {
+      margin: 0 20px;
+    }
+    .slick-prev,
+    .slick-next {
+      font-size: 24px;
+      line-height: 1;
+      color: black;
+    }
+    .slick-slide-number {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      font-size: 14px;
+      color: white;
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 5px 10px;
+      border-radius: 5px;
+    }
+    .slick-current-slide {
+      position: absolute;
+      bottom: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 14px;
+      color: white;
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 5px 10px;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="slider">
+  <div><img src="https://via.placeholder.com/600x400?text=Slide+1" alt="Slide 1"></div>
+  <div><img src="https://via.placeholder.com/600x400?text=Slide+2" alt="Slide 2"></div>
+  <div><img src="https://via.placeholder.com/600x400?text=Slide+3" alt="Slide 3"></div>
+</div>
+
+<!-- Add Slick JS file -->
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+<script>
+  $(document).ready(function(){
+    $('.slider').slick({
+      autoplay: true,
+      autoplaySpeed: 2000,
+      dots: true,
+      arrows: true,
+      prevArrow: '<button type="button" class="slick-prev">Previous</button>',
+      nextArrow: '<button type="button" class="slick-next">Next</button>'
+    });
+
+    $('.slider').on('init reInit afterChange', function(event, slick, currentSlide){
+      var i = (currentSlide ? currentSlide : 0) + 1;
+      var slideCount = slick.slideCount;
+      $('.slick-slide-number').text(i + ' / ' + slideCount);
+    });
+  });
+</script>
+
+</body>
+</html>
